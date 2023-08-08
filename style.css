@@ -389,7 +389,7 @@ hr {
 .image-container {
     display: inline-flex;
     justify-content: center;
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 40px;
     margin-left: 30%;
 }
@@ -493,6 +493,7 @@ hr {
 }
 
 .part6 p {
+    display: flex;
     color: grey;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -838,4 +839,308 @@ img {
         width: 700px;
         height: 300px;
     }
+}
+
+@media screen and (max-width: 700px) {
+    .part1 {
+        height: 32%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .part1 h3 {
+        font-size: 100px;
+    }
+
+    .container123 {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 15%;
+        transform: skewY(-5deg);
+        transform-origin: top left;
+    }
+
+    .cont {
+        transform: skewY(5deg);
+        transform-origin: top left;
+        margin-left: 10%;
+    }
+
+    .title h3 {
+        height: 20px;
+    }
+
+
+
+    .part1 li {
+        font-size: 40px;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+
+
+    .h li {
+        display: block;
+        width: 100;
+        height: 100;
+        margin-left: 125px;
+        margin-right: none;
+
+    }
+
+    .h {
+        display: block;
+    }
+
+    .contact {
+
+        width: 200px;
+        height: 85px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 25px;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+
+    .container1 {
+        margin-left: 0;
+    }
+
+    .container1 svg {
+        margin: 0;
+        margin-right: 50px;
+    }
+
+    .container2 h5 {
+        font-size: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .container2 p {
+        font-size: 25px;
+    }
+
+    .cont {
+        margin: 0;
+    }
+
+    .container3 {
+        margin-top: 50px;
+    }
+
+    .container123 {
+
+        height: 700px;
+    }
+
+    .container2 {
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+    .container1 {
+        padding-left: 50;
+    }
+
+    .part1 {
+        height: 700px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .part1 {
+        height: 32%;
+        width: 100%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .part1 h3 {
+        font-size: 100px;
+    }
+
+    .container123 {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 15%;
+        transform: skewY(-5deg);
+        transform-origin: top left;
+    }
+
+    .cont {
+        transform: skewY(5deg);
+        transform-origin: top left;
+        margin-left: 10%;
+    }
+
+    .title h3 {
+        height: 20px;
+    }
+
+
+
+    .part1 li {
+        font-size: 40px;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+
+
+    .h li {
+        display: block;
+        width: 100;
+        height: 100;
+        margin-left: -140px;
+        margin-right: none;
+
+    }
+
+    .h {
+        display: block;
+    }
+
+    .contact {
+
+        width: 200px;
+        height: 85px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 25px;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+
+    .container1 {
+        margin-left: 0;
+    }
+
+    .container1 svg {
+        margin: 0;
+        margin-right: 0px;
+    }
+
+    .container2 h5 {
+        font-size: 20px;
+        width: fit-content;
+        height: fit-content;
+        margin-right: -10px;
+    }
+
+    .container2 p {
+        font-size: 15px;
+    }
+
+    .cont {
+        margin: 0;
+    }
+
+    .container3 {
+        margin-top: 50px;
+    }
+
+    .container123 {
+
+        height: 400px;
+    }
+
+    .container2 {
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+    .container1 {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .part1 {
+        height: 700px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .part6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container61 {
+        font-size: 30px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-info {
+        font-size: 30px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: none;
+    }
+
+}
+
+
+@media (max-width:1018px) {
+    .container3 {
+        display: block;
+        justify-content: center;
+    }
+
+    .image-container {
+        display: flex;
+        margin-left: 0;
+        margin-right: -20px;
+        align-items: center;
+
+    }
+
+    .paragraph1 {
+        min-width: 600px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:800px) {
+    .container3 {
+        justify-content: center;
+
+    }
+
+    .container61 {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
