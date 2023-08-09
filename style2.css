@@ -1,0 +1,40 @@
+.part2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    background-color: rgba(17, 12, 12, 0.936);
+}
+
+.text {
+    font-size: large;
+    margin-left: 8%;
+    color: white;
+
+}
+
+#map {
+    height: 300px;
+    width: 300px;
+    "
+
+}
+
+@media (max-width:800px) {
+    .text {
+        font-size: 20px;
+        margin-left: 0%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .map {
+        width: 350px;
+    }
+
+    #map {
+        height: 300px;
+        width: 400px;
+    }
+}
