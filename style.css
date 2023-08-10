@@ -108,7 +108,6 @@ a:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.3)100%, rgba(0, 0, 0, 0.3)100%), url("IMAGES/special-menu3.jpg");
     background-size: cover;
     background-position: center;
-    background-blend-mode: darken;
     text-align: center;
 }
 
@@ -120,17 +119,22 @@ a:hover {
     background-color: #FF7415;
     color: white;
     border: 0;
-    margin: auto
+    margin-top: 50%;
 }
 
 .ingredients {
     color: white;
-    text-align: center;
+    margin-top: 0%;
 
 }
 
 .men button {
     margin-top: 170px;
+}
+
+.price:hover {
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 .container h1 {
@@ -192,8 +196,6 @@ h1 {
 }
 
 .paragraph {
-    display: flex;
-    text-align: center;
     width: 400px;
     color: gray;
 }
@@ -237,20 +239,24 @@ footer {
     justify-content: center;
 }
 
-.container1 img {
+.c img {
     background-color: rgb(255, 111, 0);
     overflow: hidden;
-    margin-right: 50px;
+    margin: left;
     height: 100px;
     width: 100px;
     background-size: 200px;
     background-position: center;
     border-radius: 50%;
-
+    padding: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
-.container1 .container2 {
-    margin-left: 10px;
+.c {
+    height: fit-content;
+    margin-bottom: -30px;
 }
 
 hr {
@@ -262,63 +268,63 @@ hr {
 }
 
 
-.container1 {
-    padding-left: 5px;
+.container12 {
+    width: 100%;
+    padding-left: -20px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-
-
+    transform: skewY(5deg);
+    transform-origin: top left;
+    margin-left: -10px;
 }
 
-.container1 svg {
-    margin-right: 120px;
-}
-
-.meat h5 {
-    margin-right: 40px;
-}
-
-.container2 h5 {
+.c h5 {
     color: orange;
-    letter-spacing: 3px;
-    margin-right: 100px;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 10px;
-    padding-left: 0px;
-
-
-
+    font-size: 16;
+    text-align: left;
+    margin-left: -10px;
 }
 
-.container2 p {
+.cont {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.c p {
     line-height: 25pt;
     color: gray;
     margin-top: -10px;
-    font-size: 16px;
-    margin-right: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    margin-right: 0px;
     margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 0px;
     height: 50px;
-    width: 270px;
+    width: 200px;
     padding-right: 0px;
-    padding-left: 20px;
-    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0px;
 }
 
-
-
-.top {
-    display: flex;
-
+.part2 {
+    background-color: #f0f0f0;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    height: 500px;
 }
 
-.under {
-    display: flex;
+.svg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FF7415;
+    margin: 50px auto 20px auto;
+}
+
+.svg img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
 }
 
 .container2 {
@@ -329,27 +335,22 @@ hr {
 
 .container3 h1 {
     text-align: center;
-    /* Center the content horizontally */
-    max-width: 580px;
-    /* Limit the width of the container */
     margin: 0 auto;
-    /* Center the container itself */
 
 }
 
 .container3 {
     margin-top: 100px;
+    margin-left: -100px;
 }
 
 .container3 p {
     color: grey;
     margin-left: 30%;
     margin-right: 30%;
-    text-align: center;
 }
 
 .container3 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 35px;
 }
@@ -364,20 +365,25 @@ hr {
 .image2 {
     height: 140px;
     width: 200px;
-    margin-bottom: 160px;
+    margin-bottom: 10px;
     margin-left: 20px;
     border-radius: 0;
+    margin-right: 20px;
 }
 
 .image3 {
     height: 120px;
     width: 200px;
-    margin-top: 160px;
-    margin-left: -200px;
+    margin-top: 10px;
+    margin-left: 20px;
     margin-right: 20px;
     border-radius: 0;
 
 
+}
+
+.image-container {
+    display: flex;
 }
 
 .image4 {
@@ -441,7 +447,6 @@ hr {
 
 .container6 {
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
 
@@ -449,7 +454,6 @@ hr {
     font-size: 18px;
 }
 
-.about-us {}
 
 .part6 a:hover {
     color: grey;
@@ -500,7 +504,6 @@ hr {
 
 .container61 {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
 }
 
@@ -539,11 +542,11 @@ hr {
 .contact-info p {
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
-    font-size: 18px;
+    font-size: 18;
 }
 
 .contact-info {
-    font-size: 18px;
+    font-size: 18;
     margin-left: 70px;
 }
 
@@ -555,19 +558,6 @@ hr {
     transform-origin: top left;
 }
 
-.cont {
-    transform: skewY(5deg);
-    transform-origin: top left;
-    margin-left: 50px;
-}
-
-svg {
-    margin-bottom: 30px;
-}
-
-h5 {
-    margin: left;
-}
 
 .special {
     margin-top: 50px;
@@ -662,6 +652,14 @@ img {
 
 }
 
+.t3 p {
+    color: #999DA0;
+}
+
+.t3 .p {
+    color: #FF7415;
+}
+
 .image {
     background-color: white;
     width: fit-content;
@@ -673,6 +671,11 @@ img {
 .image li {
     margin-top: 10px;
 
+}
+
+.get:hover {
+    background-color: white;
+    color: black;
 }
 
 @media screen and (max-width: 700px) {
@@ -688,15 +691,40 @@ img {
 
     .p4 {
         width: 100%;
-        height: 2500px;
-        font-size: 25;
+        height: 5700px;
+        font-size: 35;
+    }
+
+    .t3 h4 {
+        font-size: 70;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .t3 p {
+        font-size: 70;
+        margin: auto;
+        margin-top: 20px;
+        padding-left: 10px;
     }
 
     .part4 {
         width: 100%;
-        height: 4000px;
+        height: 7200px;
         background-color: #f0f0f0;
 
+    }
+
+    .svg {
+        width: 250px;
+        height: 250px;
+        margin: 30px 30px 30px 40px;
+    }
+
+    .svg img {
+        width: 150px;
+        height: 150px;
+        margin: 50px 50px 50px 50px;
     }
 
     .table1 {
@@ -708,16 +736,14 @@ img {
     }
 
     .t3 {
-        width: 450px;
-        height: 450px;
-        font-size: 40;
-        text-align: center;
+        width: 850px;
+        height: 850px;
     }
 
 
     .t3 img {
-        width: 450px;
-        height: 450px;
+        width: 850px;
+        height: 850px;
     }
 
     .t1 {
@@ -734,27 +760,371 @@ img {
     }
 
     .P5 {
-        height: 2000px;
+        height: 2500px;
         padding: center;
+    }
+
+    h1 {
+        font-size: 70;
+    }
+
+    .c {
+        width: 70%;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+
+
+    .cont {
+        display: flex;
+    }
+
+    .container12 {
+        display: block;
+    }
+
+    .c h5 {
+        color: orange;
+        letter-spacing: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+
+    .cont {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .c p {
+        line-height: 1.3;
+        color: gray;
+        margin-top: -10px;
+        font-size: 60;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+        height: 200px;
+        width: fit-content;
+        padding-right: 0px;
+        margin-left: 0;
+        padding-left: 0px;
+    }
+
+    .part2 {
+        background-color: #f0f0f0;
+        transform: skewY(-5deg);
+        transform-origin: top left;
+        height: 1500px;
+    }
+
+    .c {
+        transform: skewY(-5deg);
+        transform-origin: top left;
     }
 
     .image {
         margin: auto;
-        width: 800px;
-        height: 800px;
-        font-size: 35;
+        width: 70%;
+        height: 1100px;
+        font-size: 60;
     }
 
-    .read {
+    .P5 button {
         width: 300px;
-        height: 200px;
+        height: 100px;
         background-color: #FF7415;
-        font: 20;
+        font-size: 40;
     }
 
     li img {
-        width: 800px;
-        height: 400px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .part1 {
+        width: 100%;
+        height: 800px
+    }
+
+    .part1 ul {
+        display: block;
+    }
+
+    .part1 h3 {
+        font-size: 100;
+    }
+
+    .container123 {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 15%;
+        transform: skewY(-5deg);
+        transform-origin: top left;
+    }
+
+    .cont {
+        transform: skewY(5deg);
+        transform-origin: top left;
+        margin-left: 10%;
+    }
+
+    .title h3 {
+        height: 20px;
+    }
+
+
+
+    .part1 li {
+        font-size: 45;
+        display: block;
+    }
+
+
+
+    .h li {
+        width: 100;
+        height: 100;
+        margin-left: 100px;
+        margin-right: none;
+        font-size: 45;
+
+    }
+
+    .h {
+        display: none;
+        margin-left: 1500px;
+        margin-bottom: 50px;
+    }
+
+    .contact {
+
+        width: 200px;
+        height: 85px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 25px;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+
+    .container1 {
+        margin-left: 0;
+    }
+
+    .container1 svg {
+        margin: 0;
+        margin-right: 50px;
+    }
+
+    .container2 h5 {
+        font-size: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .container2 p {
+        font-size: 25px;
+    }
+
+    .cont {
+        margin: 0;
+    }
+
+    .container3 {
+        margin-top: 50px;
+    }
+
+    .container3 h1 {
+        font-size: larger;
+    }
+
+    .paragraph {
+        font-size: medium;
+        text-align: right;
+    }
+
+    .image-container {
+        margin-left: 10%;
+    }
+
+    .container3 p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .image1,
+    .image4 {
+        width: 450px;
+        height: 500px;
+    }
+
+    .image2,
+    .image3 {
+        width: 600px;
+        height: 230px;
+    }
+
+    .special {
+        height: 2000px;
+    }
+
+    .special ul {
+        display: block;
+        margin: auto;
+    }
+
+    .special h1 {
+        font-size: 70;
+    }
+
+    .special li {
+        margin: 3% auto 0 auto;
+        width: 50%;
+        height: 500px;
+    }
+
+    .price {
+        margin-top: 100%;
+        font-size: 30;
+        width: 150px;
+        height: 150px;
+    }
+
+    .ingredients {
+        margin-top: 2%;
+        font-size: 40;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3 {
+        margin-top: 30%;
+        font-size: medium;
+    }
+
+    .co h1 {
+        font-size: 70;
+
+    }
+
+    .up {
+        margin-left: 5%;
+    }
+
+    .paragraph {
+        font-size: 60;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    footer {
+        margin-right: 0px;
+    }
+
+    footer img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .chef {
+        text-align: center;
+        margin-top: 10%;
+        margin-right: 0px;
+    }
+
+    .chef td {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .title {
+        font-size: 50;
+    }
+
+    .description {
+        font-size: 50;
+    }
+
+    .container2 {
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+    .container1 {
+        padding-left: 50;
+    }
+
+    .container3 h1 {
+        font-size: 70;
+    }
+
+    .container3 p {
+        font-size: 60;
+    }
+
+    .container61 {
+        font-size: 50;
+    }
+
+    .newsletter p {
+        font-size: 50;
+        margin-left: 5%;
+    }
+
+    .email-input {
+        width: 50%;
+        height: 70px;
+        font-size: 40;
+    }
+
+    .subscribe-button {
+        width: 30%;
+        height: 70px;
+        font-size: 40;
+    }
+
+    .container61 {
+        margin-top: 30px;
+    }
+
+    .about-us,
+    .opening-hours,
+    .contact-info,
+    .quick-links {
+        width: 40%;
+        margin: 20px 0px 20px 40px;
+    }
+
+    .oq {
+        width: 40%;
+    }
+
+    .about-us p {
+        font-size: 50;
+    }
+
+    .opening-hours p {
+        font-size: 50;
+    }
+
+    .contact-info h4 {
+        font-size: 50;
+    }
+
+    .contact-info p {
+        font-size: 50;
+    }
+
+    .quick-links li {
+        font-size: 50;
     }
 }
 
@@ -767,6 +1137,276 @@ img {
     body {
         width: 100%;
         height: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .svg {
+        width: 150px;
+        height: 150px;
+        margin-left: 10px;
+    }
+
+    .svg img {
+        width: 90;
+        height: 90;
+        margin: 30px 30px 30px 30px;
+    }
+
+    h1 {
+        font-size: 40;
+    }
+
+    .c {
+        width: 70%;
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+
+
+    .cont {
+        display: flex;
+    }
+
+    .container12 {
+        display: block;
+    }
+
+    .c h5 {
+        color: orange;
+        letter-spacing: 0px;
+        font-size: 40;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+
+    .cont {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .c p {
+        line-height: 1.3;
+        color: gray;
+        margin-top: -10px;
+        font-size: 30;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-right: 0px;
+        height: 200px;
+        width: fit-content;
+        padding-right: 0px;
+        margin-left: 0;
+        padding-left: 0px;
+    }
+
+    .part2 {
+        background-color: #f0f0f0;
+        transform: skewY(-5deg);
+        transform-origin: top left;
+        height: 1200px;
+    }
+
+    .c {
+        transform: skewY(-5deg);
+        transform-origin: top left;
+    }
+
+    .part1 {
+        width: 100%;
+        height: 800px
+    }
+
+    .part1 ul {
+        display: block;
+    }
+
+    .part1 h3 {
+        font-size: 100;
+    }
+
+    .container123 {
+        background-color: #f0f0f0;
+        width: 100%;
+        height: 15%;
+        transform: skewY(-5deg);
+        transform-origin: top left;
+    }
+
+    .cont {
+        transform: skewY(5deg);
+        transform-origin: top left;
+        margin-left: 10%;
+    }
+
+    .title h3 {
+        height: 20px;
+    }
+
+
+
+    .part1 li {
+        font-size: 35;
+        display: block;
+    }
+
+
+
+    .h li {
+        width: 100;
+        height: 100;
+        margin-left: 0px;
+        font-size: 35;
+
+    }
+
+    .h {
+        display: block;
+        margin-left: 600px;
+        margin-bottom: 50px;
+    }
+
+    li .contact {
+        height: 50px;
+        width: 200px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 25;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+
+    .container3 .paragraph1 {
+        width: 90%;
+        margin-left: 0%;
+        font-size: 35;
+    }
+
+    .cont {
+        margin: 0;
+    }
+
+    .container3 {
+        margin: 0px;
+        margin-top: 50px;
+    }
+
+    .container3 h1 {
+        font-size: 50;
+    }
+
+    .image-container {
+        margin-left: 10%;
+    }
+
+    .image1,
+    .image4 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .image2,
+    .image3 {
+        width: 200px;
+        height: 120px;
+    }
+
+    .special {
+        height: 2000px;
+    }
+
+    .special ul {
+        display: block;
+        margin: auto;
+    }
+
+    .special h1 {
+        font-size: 50;
+    }
+
+    .special li {
+        margin: 3% auto 0 auto;
+        width: 50%;
+        height: 500px;
+    }
+
+    .price {
+        margin-top: 100%;
+        font-size: 30;
+        width: 150px;
+        height: 150px;
+    }
+
+    .ingredients {
+        margin-top: 2%;
+        font-size: 30;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3 {
+        margin-top: 30%;
+        font-size: medium;
+    }
+
+    .co h1 {
+        font-size: 50;
+
+    }
+
+    .up {
+        margin-left: 5%;
+    }
+
+    .paragraph {
+        font-size: 35;
+        margin-left: 5%;
+        width: 90%
+    }
+
+    footer img {
+        width: 100px;
+        height: 100px;
+        margin-left: 60%;
+    }
+
+    .chef {
+        width: 90%;
+        height: fit-content;
+        text-align: center;
+        margin-top: 10%;
+        margin-left: 50%;
+    }
+
+    .title {
+        width: fit-content;
+        font-size: 25;
+    }
+
+    .description {
+        width: fit-content;
+        font-size: 25;
+    }
+
+    .part1 {
+        height: 700px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .newsletter p {
+        margin-left: 20px;
     }
 
     .p4 {
@@ -828,9 +1468,9 @@ img {
         font-size: 35;
     }
 
-    .read {
-        width: 300px;
-        height: 200px;
+    .P5 button {
+        width: 200px;
+        height: 70px;
         background-color: #FF7415;
         font: 20;
     }
@@ -839,20 +1479,6 @@ img {
         width: 700px;
         height: 300px;
     }
-}
-
-@media screen and (max-width: 700px) {
-    .part1 {
-        height: 32%;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    .part1 h3 {
-        font-size: 100px;
-    }
 
     .container123 {
         background-color: #f0f0f0;
@@ -868,168 +1494,9 @@ img {
         margin-left: 10%;
     }
 
-    .title h3 {
-        height: 20px;
-    }
-
-
-
-    .part1 li {
-        font-size: 40px;
-        display: block;
-        width: auto;
-        height: auto;
-    }
-
-
-
-    .h li {
-        display: block;
-        width: 100;
-        height: 100;
-        margin-left: 125px;
-        margin-right: none;
-
-    }
-
-    .h {
-        display: block;
-    }
-
-    .contact {
-
-        width: 200px;
-        height: 85px;
-        background-color: #FF7415;
-        border: 0px;
-        color: white;
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 70px;
-        font-size: 25px;
-    }
-
-    .contact button {
-        margin-left: 0;
-    }
-
-    .container1 {
-        margin-left: 0;
-    }
-
-    .container1 svg {
-        margin: 0;
-        margin-right: 50px;
-    }
-
-    .container2 h5 {
-        font-size: 30px;
-        width: fit-content;
-        height: fit-content;
-    }
-
-    .container2 p {
-        font-size: 25px;
-    }
-
-    .cont {
-        margin: 0;
-    }
-
-    .container3 {
-        margin-top: 50px;
-    }
-
-    .container123 {
-
-        height: 700px;
-    }
-
-    .container2 {
-        padding-left: 20px;
-        margin-left: 10px;
-    }
-
-    .container1 {
-        padding-left: 50;
-    }
-
-    .part1 {
-        height: 700px;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 1200px) {
-    .part1 {
-        height: 32%;
-        width: 100%;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    .part1 h3 {
-        font-size: 100px;
-    }
-
-    .container123 {
-        background-color: #f0f0f0;
-        width: 100%;
-        height: 15%;
+    .c {
         transform: skewY(-5deg);
         transform-origin: top left;
-    }
-
-    .cont {
-        transform: skewY(5deg);
-        transform-origin: top left;
-        margin-left: 10%;
-    }
-
-    .title h3 {
-        height: 20px;
-    }
-
-
-
-    .part1 li {
-        font-size: 40px;
-        display: block;
-        width: auto;
-        height: auto;
-    }
-
-
-
-    .h li {
-        display: block;
-        width: 100;
-        height: 100;
-        margin-left: -140px;
-        margin-right: none;
-
-    }
-
-    .h {
-        display: block;
-    }
-
-    .contact {
-
-        width: 200px;
-        height: 85px;
-        background-color: #FF7415;
-        border: 0px;
-        color: white;
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 70px;
-        font-size: 25px;
-    }
-
-    .contact button {
-        margin-left: 0;
     }
 
     .container1 {
@@ -1056,66 +1523,6 @@ img {
         margin: 0;
     }
 
-    .container3 {
-        margin-top: 50px;
-    }
-
-    .container123 {
-
-        height: 400px;
-    }
-
-    .container2 {
-        padding-left: 20px;
-        margin-left: 10px;
-    }
-
-    .container1 {
-        padding-left: 0;
-        margin-left: 0;
-    }
-
-    .part1 {
-        height: 700px;
-    }
-
-}
-
-@media (max-width:800px) {
-    .part6 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .container61 {
-        font-size: 30px;
-        display: inline-flex;
-        flex-direction: column;
-    }
-
-    .newsletter {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contact-info {
-        font-size: 30px;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: none;
-    }
-
-}
-
-
-@media (max-width:1018px) {
-    .container3 {
-        display: block;
-        justify-content: center;
-    }
-
     .image-container {
         display: flex;
         margin-left: 0;
@@ -1123,24 +1530,4 @@ img {
         align-items: center;
 
     }
-
-    .paragraph1 {
-        min-width: 600px;
-        font-size: 30px;
-    }
-}
-
-@media (max-width:800px) {
-    .container3 {
-        justify-content: center;
-
-    }
-
-    .container61 {
-        font-size: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-
 }
