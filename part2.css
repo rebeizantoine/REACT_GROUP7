@@ -1,20 +1,9 @@
-.lastpart{
-    display:flex;
-    justify-content:center;
-    margin-top:4%;
-    background-color:rgba(17, 12, 12, 0.936);
-    margin-top:0%;
-}
-.lastp{
-    width:300px;
-    height:300px;
-    color:white;
-    margin-top:7%;
-    font-size:large;
-}
-img{
-    margin-left:5%;
-    margin-top:2%;
-    width:300px;
-    height:300px;
-}
+.start{
+    background-image: url(./IMAGES/hero_2.jpg);
+    background-position :center center;
+    display:block;
+    height:350px;
+    }
+
+     
+
