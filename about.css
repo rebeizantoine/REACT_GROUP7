@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.part1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url("IMAGES/hero_2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+}
+
+.part1 ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu {
+    padding-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    list-style-type: none;
+}
+
+
+.contact {
+    width: 100px;
+    height: 40px;
+    background-color: #FF7415;
+    border: 0px;
+    color: white;
+}
+
+.contact:hover {
+    background-color: white;
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.h {
+    margin-left: 400px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.c {
+    margin-left: 120px;
+}
+
+.title {
+    margin-left: 70px;
+}
+
+a:hover {
+    color: #FF7415;
+}
+
+.content {
+    font-size: 25;
+    margin-top: 0px;
+
+}
+
+.part1 p {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.part1 h1 {
+    text-align: center;
+}
+
+.get {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.get:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .part1 {
+        width: 100%;
+        height: 800px
+    }
+
+    .part1 ul {
+        display: block;
+    }
+
+    .part1 h3 {
+        font-size: 100;
+    }
+
+    .part1 li {
+        font-size: 45;
+        display: block;
+    }
+
+
+
+    .h li {
+        width: 100;
+        height: 100;
+        margin-left: 100px;
+        margin-right: none;
+        font-size: 45;
+
+    }
+
+    .h {
+        display: none;
+        margin-left: 1500px;
+        margin-bottom: 50px;
+    }
+
+    .contact {
+
+        width: 200px;
+        height: 85px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 25px;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+
+    .content {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .part1 {
+        width: 100%;
+        height: 800px
+    }
+
+    .part1 ul {
+        display: block;
+    }
+
+    .part1 h3 {
+        font-size: 100;
+    }
+
+    .part1 li {
+        font-size: 35;
+        display: block;
+    }
+
+
+
+    .h li {
+        width: 100;
+        height: 100;
+        margin-left: 0px;
+        font-size: 35;
+
+    }
+
+    .h {
+        display: block;
+        margin-left: 600px;
+        margin-bottom: 50px;
+    }
+
+    li .contact {
+        height: 50px;
+        width: 200px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 25;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+
+}
