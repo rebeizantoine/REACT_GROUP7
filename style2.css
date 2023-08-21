@@ -1,0 +1,19 @@
+.image-container {  display: flex;
+}
+img{border-radius: 50%; 
+width: 400px; 
+height: 400px;} 
+p{  text-align: center; padding: 50px;
+}
+h2{text-align: center;} 
+
+
+
+@media only screen and (max-width: 768px) {
+   { padding: 50px; 
+ }  
+   
+
+    
+  }
+}
