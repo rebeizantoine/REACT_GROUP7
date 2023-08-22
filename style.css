@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .part1 {
     background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url("IMAGES/hero_2.jpg");
     background-size: cover;
@@ -58,7 +62,7 @@ a:hover {
 }
 
 .content {
-    font-size: 25;
+    font-size: 30px;
     margin-top: 0px;
 
 }
@@ -66,6 +70,7 @@ a:hover {
 .part1 p {
     text-align: center;
     margin-bottom: 0px;
+    font-size: 30px;
 }
 
 .get {
@@ -74,6 +79,7 @@ a:hover {
     color: white;
     width: 100px;
     height: 35px;
+    margin-top: 10px;
 }
 
 .button {
