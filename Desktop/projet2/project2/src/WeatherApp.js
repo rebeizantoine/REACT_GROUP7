@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './WeatherApp.css';
+import HourlyWeather from './HourlyWeather';
 import back from './back.jpg';
 import background from './background.jpg';
 import clear from './clear.svg';
@@ -12,30 +13,6 @@ import snow from './snow.svg';
 import storm from './storm.svg';
 import unknow from './unknown.svg';
 import humidity from './humidity.jpg';
-
-function HourlyWeather({ data, weatherImageMapping }) {
-  const timestamp = data.dt_txt;
-  const [dateStr, timeStr] = timestamp.split(" ");
-  const dateArray = dateStr.split("-");
-  const timeArray = timeStr.split(":");
-  const hour = parseInt(timeArray[0]);
-  const amOrPm = hour < 12 ? "AM" : "PM";
-  const formattedHour = (hour % 12 || 12) + amOrPm;
-  const tempMin = parseInt(data.main.temp_min - 273.15);
-  const tempMax = parseInt(data.main.temp_max - 273.15);
-  const weatherCondition = data.weather[0].main;
-  const imageSrc = weatherImageMapping[weatherCondition] || "default.png";
-
-  return (
-    <div id="hour1">
-      <div id="hour">{formattedHour}</div>
-      <div id="im">
-        <img src={imageSrc} alt={weatherCondition} />
-      </div>
-      <div id="tm">{tempMin}°C - {tempMax}°C</div>
-    </div>
-  );
-}
 
 function WeatherApp() {
   // Define state variables for search input and weather data
@@ -64,9 +41,8 @@ function WeatherApp() {
       });
   };
 
-  // useEffect to run initial code
   useEffect(() => {
-    // Add any initial code here if needed
+    
   }, []);
 
   return (
@@ -109,7 +85,7 @@ function WeatherApp() {
       )}
       <div id="hourWeather">
       
-  {weatherData && weatherData.list.slice(0, 5).map((hourlyData, index) => (
+  {weatherData && weatherData.list.slice(0, 4).map((hourlyData, index) => (
     <HourlyWeather
       key={index}
       data={hourlyData}
