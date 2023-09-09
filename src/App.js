@@ -1,6 +1,6 @@
 import "./App.css";
 import pic from "./components/img/House.png";
-import React, { useState, useEffect } from "react";
+import React, { useState, } from "react";
 import DateTimeDisplay from "./dateTime.js";
 
 
@@ -59,9 +59,7 @@ function App() {
         console.error("Error fetching forecast data:", error);
       });
   };
-  useEffect(() => {
-    searchPressed();
-  }, []); // Automatically search when the component mounts
+
 
   return (
     <div className="container">
