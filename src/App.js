@@ -28,10 +28,6 @@ function App() {
     return new Date(date).toLocaleDateString('en-US', { month: 'short' });
 
   };
-  const formatForecastDate = (date) => {
-    const options = { month: "short", day: "numeric" };
-    return new Date(date).toLocaleDateString("en-US", options);
-  };
 
   const searchPressed = () => {
     if (search.trim() === "") {
@@ -101,7 +97,7 @@ function App() {
       </div>
 
       <div className="image">
-        <img src={pic} alt="Description of the image" />
+        <img src={pic} alt="House" />
       </div>
 
       <div className="wrapper">
