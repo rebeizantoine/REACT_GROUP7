@@ -1,7 +1,8 @@
 import "./App.css";
 import pic from "./components/img/House.png";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import DateTimeDisplay from "./dateTime.js";
+
 
 const api = {
   key: "61af75f3f18c7bf8d2b68a365c65c688",
@@ -13,7 +14,24 @@ function App() {
   const [weather, setWeather] = useState({});
   const [forecast, setForecast] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
+  const [currentHour, setCurrentHour] = useState("");
 
+  const formatForecastTime = (index) => {
+    if (index === 0) {
+      return currentHour;
+    } else {
+      const hours = new Date().getHours() + index * 4;
+      return `${hours}:00`;
+    }
+  };
+  const formatMonth = (date) => {
+    return new Date(date).toLocaleDateString('en-US', { month: 'short' });
+
+  };
+  const formatForecastDate = (date) => {
+    const options = { month: "short", day: "numeric" };
+    return new Date(date).toLocaleDateString("en-US", options);
+  };
 
   const searchPressed = () => {
     if (search.trim() === "") {
@@ -27,6 +45,7 @@ function App() {
       .then((res) => res.json())
       .then((result) => {
         setWeather(result);
+        setCurrentHour(new Date().getHours() + ":00");
       });
 
     fetch(`${api.base}forecast?q=${search}&units=metric&APPID=${api.key}`)
@@ -44,6 +63,9 @@ function App() {
         console.error("Error fetching forecast data:", error);
       });
   };
+  useEffect(() => {
+    searchPressed();
+  }, []); // Automatically search when the component mounts
 
   return (
     <div className="container">
@@ -83,17 +105,15 @@ function App() {
       </div>
 
       <div className="wrapper">
-
         {/* Display weather forecast */}
-
         {forecast.length >= 0 && (
           <div className="weather-rect">
-            {forecast.slice(0, 4).map((forecastItem, index) => (
+            {forecast.map((forecastItem, index) => (
               <div key={index} className="mini-rec">
                 {/* Display forecast data here */}
-                {/* <h2>{index + 1}</h2> */}
-                <p> date {new Date(forecastItem.dt_txt).getDate()}</p>
+                <p>  {new Date(forecastItem.dt_txt).getDate()} {formatMonth(forecastItem.dt_txt)}</p>
                 <img src={`https://openweathermap.org/img/wn/${forecastItem.weather[0].icon}.png`} alt="icon" />
+                <p>{formatForecastTime(index)}</p>
                 <p> {forecastItem.main.temp}°C</p>
                 <p> {forecastItem.weather[0].main}</p>
               </div>

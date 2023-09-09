@@ -64,7 +64,7 @@ input[type="text"]:focus {
 }
 
 .weather-rect {
-  width: 361px;
+  width: 381px;
   height: 222px;
   flex-shrink: 0;
   border-radius: 37px;
@@ -89,4 +89,50 @@ input[type="text"]:focus {
   background: rgba(243, 237, 245, 0.20);
   backdrop-filter: blur(15px);
 
+}
+
+/* Add border, padding, and transition to the input[type="text"] */
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #2719eb;
+  /* Add border */
+  border-radius: 5px;
+  /* Add border-radius for smoother edges */
+  transition: border-color 0.3s ease-in-out;
+  /* Add smooth transition for border color */
+}
+
+/* Change the border color when the input is focused */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1a0031;
+  /* Change border color on focus */
+}
+
+/* Style the button with border and transition */
+button {
+  padding: 10px 20px;
+  /* Add padding to the button */
+  border: 2px solid #2719eb;
+  /* Add border to the button */
+  border-radius: 5px;
+  /* Add border-radius for smoother edges */
+  background-color: #2719eb;
+  /* Background color for the button */
+  color: #ffffff;
+  /* Text color for the button */
+  font-size: 16px;
+  /* Font size for the button text */
+  cursor: pointer;
+  /* Add pointer cursor to the button */
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  /* Add smooth transitions */
+}
+
+/* Change the button styles on hover */
+button:hover {
+  background-color: #1a0031;
+  /* Change background color on hover */
+  border-color: #1a0031;
+  /* Change border color on hover */
 }
