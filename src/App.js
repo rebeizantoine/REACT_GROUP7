@@ -11,7 +11,7 @@ const api = {
 
 function App() {
   const [search, setSearch] = useState("");
-  const [weather, setWeather] = useState({});
+  const [cityName, setCityName] = useState("")
   const [forecast, setForecast] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
   const [currentHour, setCurrentHour] = useState("");
@@ -37,13 +37,6 @@ function App() {
       setErrorMessage("");
     }
 
-    fetch(`${api.base}weather?q=${search}&units=metric&APPID=${api.key}`)
-      .then((res) => res.json())
-      .then((result) => {
-        setWeather(result);
-        setCurrentHour(new Date().getHours() + ":00");
-      });
-
     fetch(`${api.base}forecast?q=${search}&units=metric&APPID=${api.key}`)
       .then((res) => res.json())
       .then((result) => {
@@ -51,12 +44,16 @@ function App() {
         if (forecastData) {
           const filteredForecast = forecastData.slice(0, 4);
           setForecast(filteredForecast);
+          setCurrentHour(new Date().getHours() + ":00");
+          const cityName = result.city.name || "N/A";
+          setCityName(cityName);
         } else {
           setErrorMessage("Error fetching forecast data.");
         }
       })
       .catch((error) => {
         console.error("Error fetching forecast data:", error);
+        setErrorMessage("An error occurred while fetching data.");
       });
   };
 
@@ -77,18 +74,20 @@ function App() {
       </div>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
 
-      {typeof weather.main !== "undefined" && (
+
+      {forecast.length > 0 && (
         <div className="sub-title">
           {/* Location  */}
-          <p>{weather.name}</p>
+          <p>{cityName}</p>
           {/* Temperature Celsius  */}
-          <p>{weather.main.temp}°C</p>
+          <p>{forecast[0].main.temp}°C</p>
           {/* humidity */}
-          <p> {weather.main.humidity !== undefined ? `${weather.main.humidity}%` : "N/A"}</p>
+          <p>{forecast[0].main.humidity !== undefined ? `${forecast[0].main.humidity}%` : "N/A"}</p>
           {/* Condition (Sunny ) */}
-          <p>{weather.weather[0].main}</p>
+          <p>{forecast[0].weather[0].main}</p>
         </div>
       )}
+
       <div className="dateTime">
         {/* render from another file */}
         <DateTimeDisplay />
