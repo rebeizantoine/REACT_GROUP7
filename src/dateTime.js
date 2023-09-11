@@ -10,9 +10,10 @@ function formatDateAndTime(date) {
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const ampm = hours >= 12 ? "PM" : "AM";
-    const formattedHours = hours % 12 || 12;
+    const formattedHours = (hours % 12 || 12).toString(); // Ensure it's a string
+    const formattedMinutes = minutes.toString().padStart(2, '0'); // Add leading zero if necessary
 
-    return `${dayOfWeek} ${dayOfMonth} ${month}  | ${formattedHours}: ${minutes} ${ampm}`;
+    return `${dayOfWeek} ${dayOfMonth} ${month}  | ${formattedHours}: ${formattedMinutes} ${ampm}`;
 }
 
 function DateTimeDisplay() {

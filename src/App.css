@@ -136,3 +136,8 @@ button:hover {
   border-color: #1a0031;
   /* Change border color on hover */
 }
+
+.container {
+  background-image: url("C:\Users\PC-16\Desktop\nelify maybe\REACT_GROUP7\src\components\img\SPACE.png");
+  height: 1000px;
+}
