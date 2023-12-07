@@ -1,0 +1,13 @@
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.stClient,.stOrders,.stArea{
+    color:#207DE9;
+    font-size: 40px;
+    font-weight: bold;
+}
